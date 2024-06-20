@@ -16,8 +16,34 @@ h1{
 h2{
     text-align: center;
 }
+.container {
+    display: flex; /* Utiliza o flexbox para alinhar itens lado a lado */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    max-width: 800px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
 
-img{
-    width: 500px;
+.item {
+    flex: 1; /* Ocupa a largura igualmente dentro do contêiner */
+    text-align: center; /* Alinha o conteúdo no centro */
+}
 
+.item img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto;
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+.item a {
+    display: inline-block; /* Transforma o link em bloco para ocupar a largura disponível */
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Negrito no texto */
+}
+
+a{
+    display: block;
+    color: black;
 }
