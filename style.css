@@ -1,49 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-body{
-    background-color: #bae1d3;
-}
-h1{
-
-        text-align: center;
-        font-family: "Luckiest Guy", cursive;
-        font-weight: 400px;
-        font-style: normal;
-        font-size:50px;
-      
+body {
+    background-color: #bae1d3; /* Cor de fundo verde claro */
+    font-family: 'Times New Roman', Times, serif; /* Fonte principal */
+    font-size: 16px; /* Tamanho da fonte base para o corpo do texto */
 }
 
-h2{
+h1 {
     text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.icon img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
 .container {
-    display: flex; /* Utiliza o flexbox para alinhar itens lado a lado */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 20px; /* Espaçamento entre os itens */
-    max-width: 800px; /* Largura máxima do contêiner */
-    margin: 0 auto; /* Centraliza o contêiner na página */
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    gap: 1cm; /* Espaço de 1cm entre os itens */
 }
 
 .item {
-    flex: 1; /* Ocupa a largura igualmente dentro do contêiner */
-    text-align: center; /* Alinha o conteúdo no centro */
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
 }
 
 .item img {
-    max-width: 100%; /* Imagem responsiva */
+    width: 400px; /* Tamanho ajustado para todas as imagens */
     height: auto;
-    display: block; /* Remove espaços extras abaixo da imagem */
-    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    display: block;
+    margin: cm; 
+  
+  
 }
 
 .item a {
-    display: inline-block; /* Transforma o link em bloco para ocupar a largura disponível */
-    text-decoration: none; /* Remove sublinhado padrão */
-    color: #333; /* Cor do texto */
-    font-weight: bold; /* Negrito no texto */
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: 2px;
 }
 
-a{
-    display: block;
-    color: black;
+.texto {
+    font-size: 25px;
+    margin: 20px; /* Espaçamento em torno do bloco de texto */
+}
+
+.texto p {
+    margin-left: 20px;
+}
+
+.texto .first-paragraph {
+    font-weight: bold;
+}
+
+.hoata{
+ text-align:center;
 }
